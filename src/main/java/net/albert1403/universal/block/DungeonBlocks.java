@@ -2,11 +2,10 @@ package net.albert1403.universal.block;
 
 import net.albert1403.universal.Universal;
 import net.albert1403.universal.items.EarthItems;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -72,13 +71,31 @@ public class DungeonBlocks {
                     .strength(1f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> rotten_planks = registerBlock("rotten_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .strength(1f).requiresCorrectToolForDrops()));
+                    .strength(1f)));
     public static final RegistryObject<Block> stone_path = registerBlock("stone_path",
             () -> new StonePath(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)
                     .strength(5f).requiresCorrectToolForDrops().noOcclusion().sound(SoundType.STONE)));
     public static final RegistryObject<Block> charred_dirt = registerBlock("charred_dirt",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COARSE_DIRT)
-                    .strength(1f).requiresCorrectToolForDrops()));
+                    .strength(6f)));
+    public static final RegistryObject<Block> withered_plant = registerBlock("withered_plant",
+            () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.DEAD_BUSH)
+                    .noOcclusion().noCollission().requiresCorrectToolForDrops()));
+
+    //Modelle + Inventar
+    public static final RegistryObject<Block> charred_planks = registerBlock("charred_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .strength(1f)));
+    public static final RegistryObject<Block> cracked_stone = registerBlock("cracked_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRACKED_STONE_BRICKS)
+                    .strength(6f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> overgrown_stone_bricks = registerBlock("overgrown_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSSY_STONE_BRICKS)
+                    .strength(6f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> rotten_pumpkin = registerBlock("rotten_pumpkin",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)
+                    .strength(1f)));
+
 
 
 

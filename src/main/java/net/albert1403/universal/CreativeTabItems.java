@@ -37,7 +37,7 @@ public class CreativeTabItems {
             event.accept(DungeonBlocks.egg_growth);
             event.accept(DungeonBlocks.mossy_coarse_dirt);
             event.accept(DungeonBlocks.mossy_andesite);
-
+            event.accept(DungeonBlocks.withered_plant);
         }
     }
 }
