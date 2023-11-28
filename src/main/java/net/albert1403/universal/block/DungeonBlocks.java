@@ -77,24 +77,129 @@ public class DungeonBlocks {
                     .strength(5f).requiresCorrectToolForDrops().noOcclusion().sound(SoundType.STONE)));
     public static final RegistryObject<Block> charred_dirt = registerBlock("charred_dirt",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COARSE_DIRT)
-                    .strength(6f)));
+                    .strength(0.5f)));
     public static final RegistryObject<Block> withered_plant = registerBlock("withered_plant",
             () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.DEAD_BUSH)
                     .noOcclusion().noCollission().requiresCorrectToolForDrops()));
 
-    //Modelle + Inventar
+    //Modelle
     public static final RegistryObject<Block> charred_planks = registerBlock("charred_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
                     .strength(1f)));
     public static final RegistryObject<Block> cracked_stone = registerBlock("cracked_stone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRACKED_STONE_BRICKS)
                     .strength(6f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<Block> overgrown_stone_bricks = registerBlock("overgrown_stone_bricks",
+    public static final RegistryObject<Block> overgrown_stonebricks = registerBlock("overgrown_stonebricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSSY_STONE_BRICKS)
                     .strength(6f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> rotten_pumpkin = registerBlock("rotten_pumpkin",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.PUMPKIN)
                     .strength(1f)));
+    public static final RegistryObject<Block> cacti_grass = registerBlock("cacti_grass",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+                    BlockBehaviour.Properties.copy(Blocks.GRASS).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> potted_cacti_grass = BLOCKS.register("potted_cacti_grass.json",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), DungeonBlocks.cacti_grass,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
+    public static final RegistryObject<Block> flowering_short_cacti = registerBlock("flowering_short_cacti",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+                    BlockBehaviour.Properties.copy(Blocks.GRASS).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> potted_flowering_short_cacti = BLOCKS.register("potted_flowering_short_cacti",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), DungeonBlocks.flowering_short_cacti,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
+
+    public static final RegistryObject<Block> short_cacti = registerBlock("short_cacti",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+                    BlockBehaviour.Properties.copy(Blocks.GRASS).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> potted_short_cacti = BLOCKS.register("potted_short_cacti",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), DungeonBlocks.short_cacti,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
+
+    public static final RegistryObject<Block> short_grass = registerBlock("short_grass",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+                    BlockBehaviour.Properties.copy(Blocks.GRASS).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> potted_short_grass = BLOCKS.register("potted_short_grass",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), DungeonBlocks.short_grass,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
+    public static final RegistryObject<Block> rod_cacti = registerBlock("rod_cacti",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+                    BlockBehaviour.Properties.copy(Blocks.GRASS).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> potted_rod_cacti = BLOCKS.register("potted_rod_cacti",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), DungeonBlocks.rod_cacti,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
+    public static final RegistryObject<Block> dirty_stonebricks = registerBlock("dirty_stonebricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)
+                    .strength(6f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> dirty_carved_stonebricks = registerBlock("dirty_carved_stonebricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_STONE_BRICKS)
+                    .strength(6f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ornament_stonebricks = registerBlock("ornament_stonebricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)
+                    .strength(6f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> sandy_cracked_stonebricks = registerBlock("sandy_cracked_stonebricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRACKED_STONE_BRICKS)
+                    .strength(6f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> sandy_carved_stonebricks = registerBlock("sandy_carved_stonebricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_STONE_BRICKS)
+                    .strength(6f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> sandy_stonebricks = registerBlock("sandy_stonebricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)
+                    .strength(6f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> sandy_dirt = registerBlock("sandy_dirt",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COARSE_DIRT)
+                    .strength(0.5f)));
+    public static final RegistryObject<Block> mossy_terracotta = registerBlock("mossy_terracotta",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> canyon_terracotta = registerBlock("canyon_terracotta",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> canyon_terracotta_brown = registerBlock("canyon_terracotta_brown",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> canyon_terracotta_cyan = registerBlock("canyon_terracotta_cyan",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CYAN_TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> canyon_terracotta_gray = registerBlock("canyon_terracotta_gray",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRAY_TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> canyon_terracotta_green = registerBlock("canyon_terracotta_green",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GREEN_TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> canyon_terracotta_light_blue = registerBlock("canyon_terracotta_light_blue",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LIGHT_BLUE_TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> canyon_terracotta_lime = registerBlock("canyon_terracotta_lime",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LIME_TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> canyon_terracotta_orange = registerBlock("canyon_terracotta_orange",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ORANGE_TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> canyon_terracotta_pink = registerBlock("canyon_terracotta_pink",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PINK_TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> canyon_terracotta_purple = registerBlock("canyon_terracotta_purple",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PURPLE_TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> canyon_terracotta_red = registerBlock("canyon_terracotta_red",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RED_TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> canyon_terracotta_white = registerBlock("canyon_terracotta_white",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> canyon_terracotta_yellow = registerBlock("canyon_terracotta_yellow",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.YELLOW_TERRACOTTA)
+                    .strength(1.25f).requiresCorrectToolForDrops()));
+
+
+
+
+
+
+
 
 
 
@@ -115,3 +220,5 @@ public class DungeonBlocks {
         BLOCKS.register(eventBus);
     }
 }
+
+

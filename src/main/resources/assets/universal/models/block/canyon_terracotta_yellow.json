@@ -1,0 +1,20 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "universal:block/canyon_terracotta_yellow",
+    "face": "universal:block/canyon_terracotta_yellow"
+  },
+  "elements": [
+    {   "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#face", "cullface": "down" },
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#face" },
+        "north": { "uv": [ 0, 1, 16, 16 ], "texture": "#face", "cullface": "north" },
+        "south": { "uv": [ 0, 1, 16, 16 ], "texture": "#face", "cullface": "south" },
+        "west":  { "uv": [ 0, 1, 16, 16 ], "texture": "#face", "cullface": "west" },
+        "east":  { "uv": [ 0, 1, 16, 16 ], "texture": "#face", "cullface": "east" }
+      }
+    }
+  ]
+}

@@ -29,6 +29,16 @@ public class CreativeTabItems {
             event.accept(DungeonBlocks.rotten_planks);
             event.accept(DungeonBlocks.stone_pillar);
             event.accept(DungeonBlocks.charred_dirt);
+            event.accept(DungeonBlocks.charred_planks);
+            event.accept(DungeonBlocks.overgrown_stonebricks);
+            event.accept(DungeonBlocks.cracked_stone);
+            event.accept(DungeonBlocks.dirty_stonebricks);
+            event.accept(DungeonBlocks.dirty_carved_stonebricks);
+            event.accept(DungeonBlocks.ornament_stonebricks);
+            event.accept(DungeonBlocks.sandy_cracked_stonebricks);
+            event.accept(DungeonBlocks.sandy_carved_stonebricks);
+            event.accept(DungeonBlocks.sandy_stonebricks);
+            event.accept(DungeonBlocks.sandy_dirt);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(DungeonBlocks.spider_egg);
@@ -38,6 +48,32 @@ public class CreativeTabItems {
             event.accept(DungeonBlocks.mossy_coarse_dirt);
             event.accept(DungeonBlocks.mossy_andesite);
             event.accept(DungeonBlocks.withered_plant);
+            event.accept(DungeonBlocks.rotten_pumpkin);
+            event.accept(DungeonBlocks.short_grass);
+            event.accept(DungeonBlocks.cacti_grass);
+            event.accept(DungeonBlocks.flowering_short_cacti);
+            event.accept(DungeonBlocks.short_cacti);
+            event.accept(DungeonBlocks.rod_cacti);
+        }
+        if (event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
+            event.accept(DungeonBlocks.mossy_terracotta);
+            event.accept(DungeonBlocks.canyon_terracotta);
+            event.accept(DungeonBlocks.canyon_terracotta_brown);
+            event.accept(DungeonBlocks.canyon_terracotta_cyan);
+            event.accept(DungeonBlocks.canyon_terracotta_gray);
+            event.accept(DungeonBlocks.canyon_terracotta_green);
+            event.accept(DungeonBlocks.mossy_terracotta);
+            event.accept(DungeonBlocks.canyon_terracotta_light_blue);
+            event.accept(DungeonBlocks.canyon_terracotta_lime);
+            event.accept(DungeonBlocks.canyon_terracotta_orange);
+            event.accept(DungeonBlocks.canyon_terracotta_pink);
+            event.accept(DungeonBlocks.canyon_terracotta_purple);
+            event.accept(DungeonBlocks.canyon_terracotta_red);
+            event.accept(DungeonBlocks.canyon_terracotta_white);
+            event.accept(DungeonBlocks.canyon_terracotta_yellow);
+
+
+
         }
     }
 }
