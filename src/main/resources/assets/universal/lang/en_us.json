@@ -1,29 +1,6 @@
 {
   "item.universal.ruby": "Ruby",
-  "item.universal.fancy_feather": "Fancy Feather",
-  "item.universal.horn": "Horn",
 
-  "block.universal.stone_path": "Stone Path",
-  "block.universal.chiseled_stone": "Chiseled Stone",
-  "block.universal.dirty_cobblestone": "Dirty Cobblestone",
-  "block.universal.dirty_stonefloor": "Dirty Stonefloor",
-  "block.universal.egg_growth": "Egg Growth",
-  "block.universal.empty_bookshelf": "Empty Bookshelf",
-  "block.universal.encarved_stone": "Encarved Stone",
-  "block.universal.encarved_stone_bricks": "Encarved Stone Bricks",
-  "block.universal.mossy_andesite": "Mossy Andesite",
-  "block.universal.mossy_carved_stone_bricks": "Mossy Carved Stone Bricks",
-  "block.universal.mossy_cracked_stone_bricks": "Mossy Cracked Stone Bricks",
-  "block.universal.mossy_coarse_dirt": "Mossy Coarse Dirt",
-  "block.universal.mossy_dirt": "Mossy Dirt",
-  "block.universal.mossy_smooth_andesite": "Mossy Smooth Andesite",
-  "block.universal.mossy_stone": "Mossy Stone",
-  "block.universal.old_bookshelf": "Old Bookshelf",
-  "block.universal.rotten_planks": "Rotten Planks",
-  "block.universal.spider_egg": "Spider Egg",
-  "block.universal.stone_pillar": "Stone Pillar",
-  "block.universal.stonefloor": "Stonefloor"
-  "block.universal.charred_dirt": "Charred Dirt"
-
+  "block.universal.stone_path": "Stone Path"
 
 }
